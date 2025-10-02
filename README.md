@@ -24,19 +24,19 @@ pip install pefile cryptography capstone yara-python
 Анализ одного файла:
 
 ```bash
-python gl_pe_analyzer.py sample.exe
+python oner.py sample.exe
 ```
 
 Рекурсивный анализ директории:
 
 ```bash
-python gl_pe_analyzer.py ./binaries -r --json-out report.json --html-out report.html
+python oner.py ./binaries -r --json-out report.json --html-out report.html
 ```
 
 Применение YARA:
 
 ```bash
-python gl_pe_analyzer.py sample.exe --yara rules/
+python oner.py sample.exe --yara rules/
 ```
 
 ## Аргументы
@@ -54,7 +54,7 @@ python gl_pe_analyzer.py sample.exe --yara rules/
 Анализ и вывод отчёта:
 
 ```bash
-python gl_pe_analyzer.py malware.dll --html-out analysis.html --json-out analysis.json
+python oner.py malware.dll --html-out analysis.html --json-out analysis.json
 ```
 
 ## Лицензия
